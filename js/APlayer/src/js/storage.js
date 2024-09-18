@@ -1,1 +1,0 @@
-import utils from"./utils";class Storage{constructor(t){this.storageName=t.options.storageName,this.data=JSON.parse(utils.storage.get(this.storageName)),this.data||(this.data={}),this.data.volume=this.data.volume||t.options.volume}get(t){return this.data[t]}set(t,a){this.data[t]=a,utils.storage.set(this.storageName,JSON.stringify(this.data))}}export default Storage;
